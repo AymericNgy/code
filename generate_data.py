@@ -4,7 +4,7 @@ import random
 from bitarray import bitarray
 
 NB_MAX_TOKEN = 256 + 1
-SENTENCE_LENGTH = 40
+SENTENCE_LENGTH = 10
 
 class LZ77Compressor:
     """
@@ -220,6 +220,7 @@ def generate_compress_file_LZ77(output_folder="./data_LZ77/compress", input_fold
 if __name__ == '__main__':
     length = SENTENCE_LENGTH
     num_files = 1000
+
 
 
     generate_txt_random(length, num_files)
